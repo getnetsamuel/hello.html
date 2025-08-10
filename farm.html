@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmland Hotel</title>
+  <link rel="stylesheet" type="text/css" href="/farmland /farm.css">
+</head>
+
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>Farmland Hotel</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Farmland Hotel</h2>
+    <p>Your perfect getaway near the city.</p>
+    <a href="#booking">Book Now</a>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms">
+    <h2>Our Rooms</h2>
+
+    <article>
+      <h3>Standard Room</h3>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnu9pjHgab5z2pskynT60gT7SNRYzcpPhqg&usqp=CAU"><br>
+      Comfortable room with all the basic amenities.</p>
+    </article>
+
+    <article>
+      <h3>Deluxe Room</h3>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEM9jD6IGEe8SoF-6MLvBPXrjIdb2D_ZYl7Q&usqp=CAU"><br>
+      Spacious room with beautiful panoramic views.</p>
+    </article>
+
+    <article>
+      <h3>Suite</h3>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSls08XF3oUgFhvqYJS3Xetl_4dzq7_Lj4CtsI36GwlwzgSJ1EApnletMMN&s=10"><br>Luxury suite with separate living area and premium facilities.</p>
+    </article>
+  </section>
+
+  <!-- Facilities Section -->
+  <section class="facilities">
+    <h2>Facilities & Services</h2>
+    <ul>
+      <li>Free Wi-Fi</li>
+      <li>Swimming Pool</li>
+      <li>24/7 Room Service</li>
+      <li>On-site Restaurant</li>
+      <li>Fitness Center</li>
+    </ul>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <h2>Book Your Stay</h2>
+    <form action="/submit-booking" method="post">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="checkin">Check-In Date:</label><br />
+      <input type="date" id="checkin" name="checkin" required /><br /><br />
+
+      <label for="checkout">Check-Out Date:</label><br />
+      <input type="date" id="checkout" name="checkout" required /><br /><br />
+
+      <label for="room">Room Type:</label><br />
+      <select id="room" name="room" required>
+        <option value="">-- Select a Room --</option>
+        <option value="standard">Standard</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="suite">Suite</option>
+      </select><br /><br />
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <address>
+      123 Sunset Blvd, YourCity<br />
+      Phone: +123-456-7890<br />
+      Email: contact@sunsethotel.com
+    </address>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Sunset Hotel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
